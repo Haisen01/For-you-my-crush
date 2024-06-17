@@ -1,46 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Description" content="Flowers counter program">
-  <meta name="Author" content="Franz Acebedo">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpW9CQe1bh5GyjPip5t53oLR8iC1Lrzh8Epg&usqp=CAU" >
-  <title>Flowers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Snake Game</title>
+	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="greetings">
-   
-    <span>H</span>
-    <span>E</span>
-    <span>L</span>
-    <span>L</span>
-    <span>O</span>
-    <span>!</span>
-    <span>:</span>
-    <span>D</span>
-  </div>
-  <div class="description">
-    <span>flowers for you</span>
-
-
-  </div>
-  <div class="button">
-    <button>
-      <a href="flower.html">click me!</a>
-    </button>
-
-  </div><br><br>
-  
-  <h6> <b>Creator : &copyFranz Acebedo</b></h6>
-  
-  
-  
-  
+	<div id="game-container">
+		<canvas id="gc" class="game-canvas" width="400" height="400"></canvas>
+	</div>
+	<div class="keys">
+	  <a class="up arr" onclick="Snake.action('up')">
+	    <i class="chevron up"></i></a>
+	  <br />
+	  <a class="left arr" onclick="Snake.action('left')">
+	    <i class="chevron left"></i></a>
+	  <a class="down arr" onclick="Snake.action('down')">
+	    <i class="chevron down"></i></a>
+	  <a class="right arr" onclick="Snake.action('right')">
+	    <i class="chevron right"></i></a><br><br>
+	</div>
+	<script type="text/javascript" src="game.js"></script>
+	
+<br><br>	<center>
+	<h5><b>Creator :Franz Acebedo</b></h5>
+	</center>
 </body>
-
 </html>
